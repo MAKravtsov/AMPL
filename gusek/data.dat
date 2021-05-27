@@ -1,0 +1,73 @@
+#Множество станков и деталей
+set J:= Eq1 Eq2;
+set I:= Det1 Det2;
+#Деньги
+param C_0:=0;
+param D:=1000000000000;
+#Параметры станка
+param b_j:=
+Eq1 100000
+Eq2 80000
+;
+param d_j:=
+Eq1 1000000
+Eq2 3000000
+;
+param V_j:=
+Eq1 1000000
+Eq2 1500000
+;
+param mu_j:=
+Eq1 0.85
+Eq2 0.85
+;
+param M_j:=
+Eq1 50
+Eq2 50
+;
+#Параметры деталей
+param K_i:=
+Det1 2
+Det2 2
+;
+param c_i:=
+Det1 10000
+Det2 20000
+;
+param n_i:=
+Det1 50
+Det2 30
+;
+#Какие детали, на каких станках обрабатываются
+set I_j[Eq1]:= Det1 Det2 ;
+set I_j[Eq2]:= Det1 Det2 ;
+#Маршруты деталей
+set K_j_i[Eq1,Det1]:= 0 ;
+set K_j_i[Eq2,Det1]:= 0 1 ;
+set K_j_i[Eq1,Det2]:= 0 ;
+set K_j_i[Eq2,Det2]:= 0 1 ;
+#Время обработки
+param t_jik
+[Eq1,Det1,0]:= 60
+[Eq2,Det1,0]:= 30
+[Eq2,Det1,1]:= 45
+[Eq1,Det2,0]:= 60
+[Eq2,Det2,0]:= 30
+[Eq2,Det2,1]:= 45
+;
+#Время переналадки
+param tau_jik
+[Eq1,Det1,0]:= 7
+[Eq2,Det1,0]:= 7
+[Eq2,Det1,1]:= 7
+[Eq1,Det2,0]:= 7
+[Eq2,Det2,0]:= 7
+[Eq2,Det2,1]:= 7
+;
+#Себестоимость деталей
+param c_ik
+[Det1,0]:= 5000
+[Det1,1]:= 6000
+[Det2,0]:= 7500
+[Det2,1]:= 7750
+;

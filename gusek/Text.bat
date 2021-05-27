@@ -1,0 +1,1 @@
+glpsol --model vibor_stankov.mod --data ViborEquipment.txt --log Mistake.txt --clique

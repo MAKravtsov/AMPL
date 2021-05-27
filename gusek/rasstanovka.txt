@@ -1,0 +1,9 @@
+1	stanok7
+2	stanok5
+3	stanok1
+4	stanok6
+5	stanok9
+6	stanok2
+7	stanok3
+8	stanok4
+9	stanok8

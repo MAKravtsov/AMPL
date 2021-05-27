@@ -1,0 +1,1 @@
+glpsol --model vibor_stankov.mod --data ViborTest.txt --log Mistake.txt

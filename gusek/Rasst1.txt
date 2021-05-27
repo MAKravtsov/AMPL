@@ -1,0 +1,75 @@
+set L:= "stanok1" "stanok2" "stanok3" "stanok4" "stanok5" "stanok6" "stanok7" "stanok8" "stanok9";
+
+set I:= "Det1" "Det2" "Det3" "Det4" "Det5" "Det6" "Det7" "Det8" "Det9" "Det10"; 
+
+set J:="1" "2" "3" "4" "5" "6" "7" "8" "9";
+
+param c_j:=
+"1" 10
+"2" 30
+"3" 50
+"4" 70
+"5" 90
+"6" 20
+"7" 40
+"8" 60
+"9" 80
+;
+
+param M_i:=
+"Det1" 3
+"Det2" 4
+"Det3" 3
+"Det4" 5
+"Det5" 3
+"Det6" 2
+"Det7" 3
+"Det8" 4
+"Det9" 3
+"Det10" 4
+;
+
+param r_ikl["Det1",1,"stanok1"]:=1
+["Det1",2,"stanok5"]:=1
+["Det1",3,"stanok7"]:=1
+
+["Det2",1,"stanok1"]:=1
+["Det2",2,"stanok5"]:=1
+["Det2",3,"stanok7"]:=1
+["Det2",4,"stanok8"]:=1
+
+["Det3",1,"stanok1"]:=0.38
+["Det3",2,"stanok2"]:=0.62
+["Det3",3,"stanok3"]:=1
+
+["Det4",1,"stanok1"]:=0.46
+["Det4",2,"stanok2"]:=0.54
+["Det4",3,"stanok3"]:=0.39
+["Det4",4,"stanok4"]:=0.61
+["Det4",5,"stanok5"]:=1
+
+["Det5",1,"stanok1"]:=1
+["Det5",2,"stanok5"]:=1
+["Det5",3,"stanok7"]:=1
+
+["Det6",1,"stanok3"]:=1
+["Det6",2,"stanok7"]:=1
+
+["Det7",1,"stanok2"]:=1
+["Det7",2,"stanok3"]:=1
+["Det7",3,"stanok6"]:=1
+
+["Det8",1,"stanok4"]:=1
+["Det8",2,"stanok6"]:=1
+["Det8",3,"stanok8"]:=0.3
+["Det8",4,"stanok9"]:=0.7
+
+["Det9",1,"stanok2"]:=1
+["Det9",2,"stanok4"]:=1
+["Det9",3,"stanok7"]:=1
+
+["Det10",1,"stanok2"]:=1
+["Det10",2,"stanok3"]:=0.49
+["Det10",3,"stanok4"]:=0.51
+["Det10",4,"stanok6"]:=1
+;

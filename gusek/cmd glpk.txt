@@ -1,0 +1,2 @@
+glpsol --model vibor_stankov.mod --data ViborEquipment.txt - вызов программы glpk
+>C:\Users\MKravtsov\Desktop\Диплом\gusek\Mistake.txt
